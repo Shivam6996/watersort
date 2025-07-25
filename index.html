@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Water Sort Game</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Water-Sort-Game</h1>
+
+  <div id="top-bar">
+    <div id="level-info">Level: <span id="current-level">1</span></div>
+    <div id="coin-info">
+      <img src="coin.png" alt="coin" />
+      <span id="coin-count">0</span>
+    </div>
+    <button id="level-menu-btn">Select Level</button>
+  </div>
+
+  <div id="game"></div>
+
+  <div id="controls">
+    <button id="reset-btn">Reset</button>
+    <button id="hint-btn">Hint (-50)</button>
+  </div>
+
+  <div id="level-menu" class="hidden"></div>
+
+  <!-- Sounds -->
+  <audio id="coin-sound" src="coin.mp3" preload="auto"></audio>
+  <audio id="fill-sound" src="fill.mp3" preload="auto"></audio>
+  <audio id="win-sound" src="level-complete.mp3" preload="auto"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
